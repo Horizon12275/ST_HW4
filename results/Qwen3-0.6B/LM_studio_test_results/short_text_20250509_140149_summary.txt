@@ -1,0 +1,7 @@
+SHORT_TEXT RESULTS (results/Qwen3-0.6B)
+Concurrency: 5
+Avg TTFT: 0.5630s
+Avg TBT: 0.0045s
+Avg TPS: 31.86 tokens/s
+Total tokens: 800
+Results saved to results/Qwen3-0.6B/LM_studio_test_results/short_text_20250509_140149_summary.txt

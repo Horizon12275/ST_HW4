@@ -1,0 +1,7 @@
+MIXED_LOAD RESULTS (results/Qwen3-0.6B)
+Concurrency: 4
+Avg TTFT: 2.5288s
+Avg TBT: 0.0038s
+Avg TPS: 58.09 tokens/s
+Total tokens: 6978
+Results saved to results/Qwen3-0.6B/LM_studio_test_results/mixed_load_20250509_140534_summary.txt

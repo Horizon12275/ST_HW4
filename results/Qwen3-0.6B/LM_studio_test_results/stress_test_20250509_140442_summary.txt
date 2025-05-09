@@ -1,0 +1,7 @@
+STRESS_TEST RESULTS (results/Qwen3-0.6B)
+Concurrency: 10
+Avg TTFT: 2.2772s
+Avg TBT: 0.0047s
+Avg TPS: 23.76 tokens/s
+Total tokens: 1981
+Results saved to results/Qwen3-0.6B/LM_studio_test_results/stress_test_20250509_140442_summary.txt

@@ -1,0 +1,7 @@
+QA_MEDIUM RESULTS (results/Qwen3-0.6B)
+Concurrency: 3
+Avg TTFT: 1.2441s
+Avg TBT: 0.0045s
+Avg TPS: 56.23 tokens/s
+Total tokens: 3622
+Results saved to results/Qwen3-0.6B/LM_studio_test_results/qa_medium_20250509_140219_summary.txt
