@@ -17,8 +17,8 @@ client = openai.OpenAI(
     api_key="no-key-required"
 )
 
-MODEL_NAME = "results/Qwen3-0.6B"
-OUTPUT_DIR = MODEL_NAME + "/" + "LM_studio_test_results"
+MODEL_NAME = "Qwen3-0.6B"
+OUTPUT_DIR = "results/" +  MODEL_NAME + "/" + "LM_studio_test_results"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 class PerformanceMetrics:
