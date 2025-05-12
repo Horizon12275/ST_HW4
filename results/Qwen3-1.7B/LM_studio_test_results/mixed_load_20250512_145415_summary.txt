@@ -1,0 +1,9 @@
+MIXED_LOAD RESULTS (Qwen3-1.7B)
+Concurrency: 4
+Avg TTFT: 3.7301s (P99: 4.0259s)
+Avg TBT: 0.0065s (P99: 0.0280s)
+Avg TPS: 41.94 tokens/s (P99: 111.47t/s)
+Total tokens: 7972
+Max GPU Util: 74%
+Max GPU Mem: 4852.90MB
+Results saved to results/Qwen3-1.7B/LM_studio_test_results/mixed_load_20250512_145415_summary.txt

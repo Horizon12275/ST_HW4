@@ -1,0 +1,9 @@
+STRESS_TEST RESULTS (qwen3:0.6b)
+Concurrency: 10
+Avg TTFT: 2.0232s (P99: 2.5297s)
+Avg TBT: 0.0107s (P99: 0.0169s)
+Avg TPS: 21.93 tokens/s (P99: 61.92t/s)
+Total tokens: 2036
+Max GPU Util: 46%
+Max GPU Mem: 3738.08MB
+Results saved to results/Qwen3-0.6B/Ollama_test_results/stress_test_20250512_145913_summary.txt

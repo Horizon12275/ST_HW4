@@ -1,0 +1,9 @@
+SHORT_TEXT RESULTS (Qwen/Qwen3-1.7B)
+Concurrency: 5
+Avg TTFT: 0.0657s (P99: 0.2559s)
+Avg TBT: 0.0138s (P99: 0.0189s)
+Avg TPS: 64.12 tokens/s (P99: 72.17t/s)
+Total tokens: 840
+Max GPU Util: 91%
+Max GPU Mem: 12001.18MB
+Results saved to results/Qwen3-1.7B/Vllm_test_results/short_text_20250512_160956_summary.txt

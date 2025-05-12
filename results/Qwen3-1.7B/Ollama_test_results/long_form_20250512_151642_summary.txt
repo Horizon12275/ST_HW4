@@ -1,0 +1,9 @@
+LONG_FORM RESULTS (qwen3:1.7b)
+Concurrency: 1
+Avg TTFT: 0.0503s (P99: 0.1162s)
+Avg TBT: 0.0049s (P99: 0.0072s)
+Avg TPS: 196.09 tokens/s (P99: 202.12t/s)
+Total tokens: 11255
+Max GPU Util: 84%
+Max GPU Mem: 4503.94MB
+Results saved to results/Qwen3-1.7B/Ollama_test_results/long_form_20250512_151642_summary.txt

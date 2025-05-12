@@ -1,0 +1,9 @@
+STRESS_TEST RESULTS (Qwen3-0.6B)
+Concurrency: 10
+Avg TTFT: 1.5130s (P99: 1.7786s)
+Avg TBT: 0.0035s (P99: 0.0151s)
+Avg TPS: 33.85 tokens/s (P99: 120.60t/s)
+Total tokens: 1975
+Max GPU Util: 76%
+Max GPU Mem: 4121.42MB
+Results saved to results/Qwen3-0.6B/LM_studio_test_results/stress_test_20250512_144902_summary.txt

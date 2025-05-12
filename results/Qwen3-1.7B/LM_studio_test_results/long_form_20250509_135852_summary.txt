@@ -1,7 +1,0 @@
-LONG_FORM RESULTS (results/Qwen3-1.7B)
-Concurrency: 1
-Avg TTFT: 1.4574s
-Avg TBT: 0.0057s
-Avg TPS: 91.20 tokens/s
-Total tokens: 10631
-Results saved to results/Qwen3-1.7B/LM_studio_test_results/long_form_20250509_135852_summary.txt

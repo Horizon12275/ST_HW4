@@ -106,6 +106,22 @@ docker run --runtime nvidia --gpus all `
     --ipc=host `
     vllm/vllm-openai:latest `
     --model Qwen/Qwen3-0.6B # 这里是模型的名称、可以根据需要修改、也可以修改成自己的模型目录、指定模型名称就会在huggingface的缓存目录中查找模型
+
+docker run --runtime nvidia --gpus all `
+    -v D:/Horizon/Projects/Ongoing/ST_HW4/.cache/huggingface:/root/.cache/huggingface `
+    --env "HUGGING_FACE_HUB_TOKEN=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" `
+    -p 11434:8000 `
+    --ipc=host `
+    vllm/vllm-openai:latest `
+    --model Qwen/Qwen3-0.6B
+
+docker run --runtime nvidia --gpus all `
+    -v D:/Horizon/Projects/Ongoing/ST_HW4/.cache/huggingface:/root/.cache/huggingface `
+    --env "HUGGING_FACE_HUB_TOKEN=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" `
+    -p 11434:8000 `
+    --ipc=host `
+    vllm/vllm-openai:latest `
+    --model Qwen/Qwen3-1.7B
 ```
 
 ## 实验设置
@@ -124,6 +140,6 @@ docker run --runtime nvidia --gpus all `
 | -------------- | ------ | ----------------- | --------------------- | ------------------------------ |
 | **短文本问答** | 5      | 5-10              | 20                    | 测试高并发下短文本处理的吞吐量 |
 | **长文问答**   | 3      | 50-100            | 100                   | 典型问答场景性能基准           |
-| **长文生成**   | 1      | 20-30             | 300                   | 测试长文本生成稳定性           |
+| **长文生成**   | 1      | 40-50             | 300                   | 测试长文本生成稳定性           |
 | **高并发压力** | 10     | 30-50             | 50                    | 极限并发下的错误处理能力       |
 | **混合负载**   | 4      | 10-200            | 200                   | 模拟真实场景的随机负载         |

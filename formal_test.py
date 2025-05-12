@@ -62,8 +62,8 @@ client = openai.OpenAI(
     api_key="no-key-required"
 )
 
-MODEL_NAME = "Qwen3-0.6B"
-OUTPUT_DIR = "results/" + MODEL_NAME + "/" + "LM_studio_test_results"
+MODEL_NAME = "Qwen/Qwen3-1.7B"
+OUTPUT_DIR = "results/" + "Qwen3-1.7B" + "/" + "Vllm_test_results"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 class PerformanceMetrics:
@@ -98,7 +98,7 @@ def generate_dynamic_prompt(scenario_type: str) -> str:
     prompt_map = {
         "short_text": "Generate a very short (5-10 tokens) question about {}/no_think",
         "qa_medium": "Create a medium-length (50-100 tokens) question about {}/no_think",
-        "long_form": "Make a detailed question with the length of 20-30 tokens about {} and this prompt ask llm to give a long answer/no_think",
+        "long_form": "Make a detailed question with the length of 40-50 tokens about {} and this prompt ask llm to give a long answer/no_think",
         "stress_test": "Create a (30-50 tokens) question about {}/no_think",
         "mixed_load": "Provide a question about {} with variable length(10-200 tokens)/no_think"
     }
@@ -117,6 +117,7 @@ def generate_dynamic_prompt(scenario_type: str) -> str:
             "role": "user",
             "content": prompt_map[scenario_type].format(topic)
         }],
+        max_tokens=500,
         temperature=0.7
     )
     

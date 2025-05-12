@@ -1,0 +1,9 @@
+QA_MEDIUM RESULTS (Qwen3-1.7B)
+Concurrency: 3
+Avg TTFT: 1.0026s (P99: 1.1783s)
+Avg TBT: 0.0050s (P99: 0.0069s)
+Avg TPS: 68.05 tokens/s (P99: 113.32t/s)
+Total tokens: 4038
+Max GPU Util: 88%
+Max GPU Mem: 3912.08MB
+Results saved to results/Qwen3-1.7B/llama_cpp_test_results/qa_medium_20250512_154649_summary.txt
